@@ -2,30 +2,33 @@
 	"schemaVersion": 1,
 	"id": "datapackdownloader",
 	"version": "${version}",
-	"name": "Datapack Downloader",
-	"description": "Minecraft Datapack Auto Downloader",
+	"name": "DatapackDownloader",
+	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Aotumuri"
+		"Me!"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/datapackdownloader/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"com.example.DatapackDownloader"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"com.example.DatapackDownloaderClient"
+		],
+		"fabric-datagen": [
+			"com.example.DatapackDownloaderDataGenerator"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"datapackdownloader.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "datapackdownloader.client.mixins.json",
 			"environment": "client"
 		}
 	],
